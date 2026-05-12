@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaintsGraphix</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="/logo.png" alt="SaintsGraphix Logo" class="logo">
+    </div>
+    <h1 class="neon-text">SaintsGraphix – Graphics & Design</h1>
+    <p class="tagline neon-text">We Design. You Shine.</p>
+</header>
+
+<section class="services">
+    <h2 class="neon-text">Our Services</h2>
+    <ul>
+        <li>Logo Design – from $1</li>
+        <li>Flyer Design – from $1</li>
+        <li>Social Media Posts – from $1</li>
+        <li>Banner Design – from $2</li>
+        <li>Business Cards – from $1</li>
+        <li>Merch Design – from $3</li>
+        <li>Photo Editing – from $2</li>
+    </ul>
+</section>
+
+<section class="pricing">
+    <h2 class="neon-text">Pricing Packages</h2>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Basic</h3>
+            <p class="price">$1</p>
+            <ul>
+                <li>Logo Design</li>
+                <li>Business Card</li>
+            </ul>
+            <a href="https://wa.me/263714373922?text=Hi%20SaintsGraphix!%20I%20want%20the%20Basic%20Package%20%241" class="order-btn" target="_blank">Order Now</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Standard</h3>
+            <p class="price">$2</p>
+            <ul>
+                <li>Flyer Design</li>
+                <li>Social Media Post</li>
+            </ul>
+            <a href="https://wa.me/263714373922?text=Hi%20SaintsGraphix!%20I%20want%20the%20Standard%20Package%20%242" class="order-btn" target="_blank">Order Now</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <p class="price">$3-$5</p>
+            <ul>
+                <li>Banner Design</li>
+                <li>Merch Design</li>
+                <li>Photo Editing</li>
+            </ul>
+            <a href="https://wa.me/263714373922?text=Hi%20SaintsGraphix!%20I%20want%20the%20Premium%20Package%20%243-%245" class="order-btn" target="_blank">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2 class="neon-text">Contact Us</h2>
+    <p>WhatsApp: <a href="https://wa.me/263714373922" target="_blank">+263 714 373 922</a></p>
+    <p>Email: <a href="mailto:gamershub20007@gmail.com">gamershub20007@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/saintxor" target="_blank">@saintxor</a></p>
+</section>
+
+<footer>
+    <p>© 2026 SaintsGraphix. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
