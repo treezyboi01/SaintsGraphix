@@ -1,76 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SaintsGraphix</title>
-<link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header>
-    <div class="logo-container">
-        <img src="/logo.png" alt="SaintsGraphix Logo" class="logo">
-    </div>
-    <h1 class="neon-text">SaintsGraphix – Graphics & Design</h1>
-    <p class="tagline neon-text">We Design. You Shine.</p>
-</header>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
 
-<section class="services">
-    <h2 class="neon-text">Our Services</h2>
-    <ul>
-        <li>Logo Design – from $1</li>
-        <li>Flyer Design – from $1</li>
-        <li>Social Media Posts – from $1</li>
-        <li>Banner Design – from $2</li>
-        <li>Business Cards – from $1</li>
-        <li>Merch Design – from $3</li>
-        <li>Photo Editing – from $2</li>
-    </ul>
-</section>
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(270deg, #ff0000, #ffcc00, #000);
+    background-size: 600% 600%;
+    animation: gradientShift 15s ease infinite;
+}
 
-<section class="pricing">
-    <h2 class="neon-text">Pricing Packages</h2>
-    <div class="pricing-container">
-        <div class="pricing-card">
-            <h3>Basic</h3>
-            <p class="price">$1</p>
-            <ul>
-                <li>Logo Design</li>
-                <li>Business Card</li>
-            </ul>
-            <a href="https://wa.me/263714373922?text=Hi%20SaintsGraphix!%20I%20want%20the%20Basic%20Package%20%241" class="order-btn" target="_blank">Order Now</a>
-        </div>
-        <div class="pricing-card">
-            <h3>Standard</h3>
-            <p class="price">$2</p>
-            <ul>
-                <li>Flyer Design</li>
-                <li>Social Media Post</li>
-            </ul>
-            <a href="https://wa.me/263714373922?text=Hi%20SaintsGraphix!%20I%20want%20the%20Standard%20Package%20%242" class="order-btn" target="_blank">Order Now</a>
-        </div>
-        <div class="pricing-card">
-            <h3>Premium</h3>
-            <p class="price">$3-$5</p>
-            <ul>
-                <li>Banner Design</li>
-                <li>Merch Design</li>
-                <li>Photo Editing</li>
-            </ul>
-            <a href="https://wa.me/263714373922?text=Hi%20SaintsGraphix!%20I%20want%20the%20Premium%20Package%20%243-%245" class="order-btn" target="_blank">Order Now</a>
-        </div>
-    </div>
-</section>
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-<section class="contact">
-    <h2 class="neon-text">Contact Us</h2>
-    <p>WhatsApp: <a href="https://wa.me/263714373922" target="_blank">+263 714 373 922</a></p>
-    <p>Email: <a href="mailto:gamershub20007@gmail.com">gamershub20007@gmail.com</a></p>
-    <p>Telegram: <a href="https://t.me/saintxor" target="_blank">@saintxor</a></p>
-</section>
+header .logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
 
-<footer>
-    <p>© 2026 SaintsGraphix. All Rights Reserved.</p>
-</footer>
-</body>
-</html>
+.neon-text {
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff0000, 0 0 20px #ffcc00;
+    animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff0000; }
+    100% { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff0000; }
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul li::before {
+    content: "•";
+    color: #ff0000;
+    margin-right: 8px;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff0000;
+}
+
+/* Pricing cards */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-card {
+    background: linear-gradient(135deg, #ff0000, #000, #ffcc00);
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 250px;
+    color: #fff;
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ffcc00;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 40px #ff0000, 0 0 60px #ffcc00;
+}
+
+.order-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff0000, #ffcc00);
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ffcc00;
+    text-align: center;
+    animation: buttonGlow 2s ease-in-out infinite alternate;
+    transition: transform 0.4s;
+}
+
+.order-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff0000, 0 0 50px #ffcc00;
+}
+
+@keyframes buttonGlow {
+    0% { box-shadow: 0 0 10px #ff0000, 0 0 20px #ffcc00; }
+    100% { box-shadow: 0 0 20px #ff0000, 0 0 40px #ffcc00; }
+    }
